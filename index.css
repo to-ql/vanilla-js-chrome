@@ -1,0 +1,90 @@
+@import "reset.css";
+
+.btn {
+  cursor: pointer;
+}
+
+body {
+  background-color: #222f3e;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.js-clock {
+  margin-top: 200px;
+}
+.js-clock h1 {
+  font-size: 100px;
+  color: #fff;
+}
+
+.margin-bottom {
+  margin-bottom: 30px;
+}
+
+.toDoList {
+}
+
+.js-toDoList li {
+  margin-bottom: 10px;
+}
+
+.js-toDoList li button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes btnAnimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.js-toDoList li button:hover {
+  animation: btnAnimation 0.4s ease-in-out forwards;
+}
+
+.js-weather {
+  position: absolute;
+  bottom: 50px;
+}
+.clicked {
+  color: #d1ccc0;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadein 0.45s linear;
+}
